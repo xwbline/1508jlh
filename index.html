@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>护士考试过关学员交流会</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="images/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://img1.5haoxue.net/hxnew/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="images/js.js"></script>
+<script>
+var Tday = new Array();
+var Tday1 = new Array();
+var daysms = 24 * 60 * 60 * 1000
+var hoursms = 60 * 60 * 1000
+var Secondms = 60 * 1000
+var microsecond = 1000
+var DifferHour = -1
+var DifferMinute = -1
+var DifferSecond = -1
+function clock(key)
+{
+var time = new Date()
+var hour = time.getHours()
+var minute = time.getMinutes()
+var second = time.getSeconds()
+var timevalue = ""+((hour > 12) ? hour-12:hour)
+timevalue +=((minute < 10) ? ":0":":")+minute
+timevalue +=((second < 10) ? ":0":":")+second
+timevalue +=((hour >12 ) ? " PM":" AM")
+var convertHour = DifferHour
+var convertMinute = DifferMinute
+var convertSecond = DifferSecond
+var Diffms = Tday[key].getTime() - time.getTime()
+DifferHour = Math.floor(Diffms / daysms)
+Diffms -= DifferHour * daysms
+DifferMinute = Math.floor(Diffms / hoursms)
+Diffms -= DifferMinute * hoursms
+DifferSecond = Math.floor(Diffms / Secondms)
+Diffms -= DifferSecond * Secondms
+var dSecs = Math.floor(Diffms / microsecond)
+if(convertHour != DifferHour) a="<b>"+DifferHour+"</b>"+"<span>天</span>";
+if(convertMinute != DifferMinute) b="<b>"+DifferMinute+"</b>"+"<span>时</span>";
+if(convertSecond != DifferSecond) c="<b>"+DifferSecond+"</b>"+"<span>分</span>";
+d="<b>"+dSecs+"</b>"+"<span>秒</span>";
+if(DifferHour >= 0){
+document.getElementById("leftTime"+key).innerHTML = a+b+c+d; //显示倒计时信息a + b + c + d
+}else{document.getElementById("leftTime"+key).innerHTML ="结束"}
+}
+</script>
+</head>
+
+<body>
+<div class="haoxueTop"><div><a href="http://www.5haoxue.net/">好学教育</a><strong>400-0105-789</strong></div></div>
+<div class="header">
+<img src="images/header.gif" width="1000" height="358" alt="" />
+<div class="lead">
+开始时间：<span class="time">8月18日19点</span>
+<a href="#">进入直播</a>
+</div>
+</div>
+
+<div class="playimgbg">
+<div class="mainBox">
+<div class="clearfix meeting">
+<div class="playBox">
+<img src="images/xiaomin.jpg" alt="晓敏老师" />
+<a href="#" class="btnPlay"></a>
+</div>
+<div class="meetingAbout">
+<i class="opacity"></i>
+<div class="z1">
+<div class="countDown">距离直播交流会还有：<div id="leftTime0">00</div></div>
+<script>Tday[0] = new Date("August 18, 2015 19:30:00"); window.setInterval(function() {clock(0);}, 1000); </script>
+<div class="impression">
+<div class="caption">
+<h6>名师印象</h6>
+——最受学员喜爱的护考美女讲师
+</div>
+<p>
+<span class="name">晓敏老师</span>
+-好学医学首席名师
+<br />-好学护考教研负责人
+<br />-护考忠实“敏粉”上千人
+<br />-教学善于剖析解题方法
+<br />-深度提取高频考点及考题
+<br />-保证考生最短时间通过考试
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mainBox">
+<div class="captionSty01">他们<b>告诉你</b>，护士资格怎么过</div>
+<ul id="jq_tList" class="tList clearfix">
+<li>
+<img src="images/t01.jpg" alt="" />
+<div class="title">分享主题：<span>怎么样成为一名优秀的护士</span></div>
+<div class="info jq_info">
+<i class="opacity"></i>
+<div class="z1">
+<h6>分享者基本资料</h6>
+<p>
+姓名：庞月
+<br />职位：浙江大学第二附属医院 手术室护士
+</p>
+</div>
+</div>
+</li>
+<li>
+<img src="images/t02.jpg" alt="" />
+<div class="title">分享主题：<span>护士的职业生涯规划</span></div>
+<div class="info jq_info">
+<i class="opacity"></i>
+<div class="z1">
+<h6>分享者基本资料</h6>
+<p>
+姓名：付传亮
+<br />职位：浙江邵逸夫医院  ICU护士
+</p>
+</div>
+</div>
+</li>
+<li class="last">
+<img src="images/t03.jpg" alt="" />
+<div class="title">分享主题：<span>2015年护考，我是如何备考的？</span></div>
+<div class="info jq_info">
+<i class="opacity"></i>
+<div class="z1">
+<h6>分享者基本资料</h6>
+<p>
+姓名：胡西京
+<br />成绩：专业实务88
+<br />实践能力：92
+<br />报考班次：VIP协议保过方案
+</p>
+</div>
+</div>
+</li>
+<li>
+<img src="images/t04.jpg" alt="" />
+<div class="title">分享主题：<span>如何备考2016护考</span></div>
+<div class="info jq_info">
+<i class="opacity"></i>
+<div class="z1">
+<h6>分享者基本资料</h6>
+<p>
+姓名：王慧
+<br />成绩：专业实务85
+<br />实践能力：85
+<br />报考班次：直播冲刺班
+</p>
+</div>
+</div>
+</li>
+<li>
+<img src="images/t05.jpg" alt="" />
+<div class="title">分享主题：<span>2016怎么一次通过护考</span></div>
+<div class="info jq_info">
+<i class="opacity"></i>
+<div class="z1">
+<h6>分享者基本资料</h6>
+<p>
+姓名：宋弘咏
+<br />成绩：专业实务94
+<br />实践能力：96
+<br />报考班次：直播冲刺班
+</p>
+</div>
+</div>
+</li>
+<li class="last">
+<img src="images/t06.jpg" alt="" />
+<div class="title">分享主题：<span>关于护士备考需要关注的问题</span></div>
+<div class="info jq_info">
+<i class="opacity"></i>
+<div class="z1">
+<h6>分享者基本资料</h6>
+<p>
+姓名：马雪莹
+<br />成绩：专业实务81
+<br />实践能力：79
+<br />报考班次：VIP协议保过方案
+</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+
+<div class="mainBox">
+<div class="captionSty02">参与直播讲座，<b>赢取</b>护士2016新课程</div>
+<div class="boxSty01">
+<h5>抽奖流程</h5>
+<ul class="step">
+<li class="list01">
+1.参与直播，<br />不定时抽奖
+</li>
+<li class="list02">
+2.扫描抽奖二维码，<br />登陆后抽奖
+</li>
+<li class="list03">
+3.奖品设置：
+<br />名师通关班、VIP协议保过班、代金券等
+</li>
+<li class="list04">
+4.奖品：
+<br />一二等奖联系客服开课，代金券限有赞商城消费
+</li>
+<li class="list05">
+<img src="images/qrcode01.gif" alt="" />
+<br /><br />扫一扫
+<br />进入商城
+</li>
+</ul>
+<ul class="courseList02 clearfix">
+<li>
+<div class="box">
+<h2>名师通关方案</h2>
+<div class="priceBox"><span class="price">现价：<strong>&yen;480</strong></span><del>原价：&yen;780</del></div>
+<div class="text">
+<h6>适合以下考生报名：</h6>
+1.有基础，不自信
+<br />2.缺乏自我预测考点/题
+<br />3.刚毕业，没钱，又想一次通过
+<br />4.有信心考试，不自信过关
+</div>
+</div>
+<div class="btnBox"><a href="#" class="btnSty01">提前购</a><a href="#" class="btnSty01">点击咨询</a></div>
+</li>
+<li>
+<span class="recommend">学员<br />推荐</span>
+<span class="give">购课送材料</span>
+<div class="box">
+<h2 class="tl">VIP协议保过方案</h2>
+<div class="priceBox"><span class="price">现价：<strong>&yen;780</strong></span><del>原价：&yen;1280</del></div>
+<div class="text">
+<h6>适合以下考生报名：</h6>
+1.瞄准及格分，决不少分
+<br />2.没基础，有决心一样通过
+<br />3.没有这么低的保过费用，只有实力保障你一次通过
+</div>
+</div>
+<div class="btnBox"><a href="#" class="btnSty01">提前购</a><a href="#" class="btnSty01">点击咨询</a></div>
+</li>
+<li class="last">
+<div class="box">
+<h2>名师通关方案</h2>
+<div class="priceBox"><span class="price">现价：<strong>&yen;480</strong></span><del>原价：&yen;780</del></div>
+<div class="text">
+<h6>适合以下考生报名：</h6>
+1.有基础，不自信
+<br />2.缺乏自我预测考点/题
+<br />3.刚毕业，没钱，又想一次通过
+<br />4.有信心考试，不自信过关
+</div>
+</div>
+<div class="btnBox"><a href="#" class="btnSty01">提前购</a><a href="#" class="btnSty01">点击咨询</a></div>
+</li>
+
+
+</ul>
+</div>
+</div>
+
+<div class="mainBox">
+<div class="captionSty01">2015年<b>好学护考</b>，成就辉煌</div>
+<div class="boxSty02">
+<div class="captionSty03">2015好学护士资格<b>通过率</b>对比</div>
+<img src="images/chart.jpg" alt="" class="mlrauto" />
+</div>
+<div class="boxSty02">
+<div class="captionSty03">真正的口碑，我们只用<b>高分</b>说话</div>
+<div class="gfList clearfix">
+<img src="images/gf01.jpg" alt="" />
+<img src="images/gf02.jpg" alt="" />
+<img src="images/gf03.jpg" alt="" />
+<img src="images/gf04.jpg" alt="" />
+<img src="images/gf05.jpg" alt="" />
+<img src="images/gf06.jpg" alt="" />
+<img src="images/gf07.jpg" alt="" />
+<img src="images/gf08.jpg" alt="" />
+</div>
+</div>
+</div>
+
+<div class="bg02">
+<div class="mainBox">
+<div class="captionSty04">漫漫<b>备考路</b>，我们与你同行</div>
+<ul class="contentList clearfix">
+<li>
+<h6>这里，你可以找到<b>晓敏老师</b></h6>
+<img src="images/qrcode02.gif" alt="xiaominlaoshi" />
+<h5>微信号:xiaominlaoshi</h5>
+</li>
+<li>
+<h6>在这里，你可以找到<b>更多的小伙伴</b></h6>
+<img src="images/qq.png" alt="xiaominlaoshi" />
+<h5>QQ:117047884</h5>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="footer">
+<a looyu_bound="1" target="_blank" rel="nofollow" href="http://www.5haoxue.net/about/">关于我们</a> |
+<a looyu_bound="1" target="_blank" rel="nofollow" href="http://www.5haoxue.net/about/jobs/">招聘信息</a> |
+<a looyu_bound="1" target="_blank" rel="nofollow" href="http://www.5haoxue.net/jiameng">学习中心加盟</a> |
+<a looyu_bound="1" target="_blank" rel="nofollow" href="http://www.5haoxue.net/news/">媒体关注</a> |
+<a looyu_bound="1" target="_blank" rel="nofollow" href="http://www.5haoxue.net/service/help/">帮助中心</a> |
+<a looyu_bound="1" target="_blank" rel="nofollow" href="http://www.5haoxue.net/sitemap/">网站地图</a> |
+<a looyu_bound="1" target="_blank" rel="nofollow" href="http://www.5haoxue.net/about/contact/">联系我们</a>
+<br />
+Copyright ©2014 5haoxue.net Inc. All Rights Reserved.
+<br />好学教育 版权所有 京ICP备13017763号
+<!--<script language="JavaScript" src=" http://s19.cnzz.com/stat.php?id=3208297&amp;web_id=3208297&amp;show=pic"></script><a title="站长统计" target="_blank" href="http://www.cnzz.com/stat/website.php?web_id=3208297"></a>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F09eb8195041fc839bc733a96306516ee' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript" src=" http://hm.baidu.com/h.js?09eb8195041fc839bc733a96306516ee"></script><a target="_blank" href="http://tongji.baidu.com/hm-web/welcome/ico?s=09eb8195041fc839bc733a96306516ee"><img width="20" height="20" border="0" src="http://eiv.baidu.com/hmt/icon/21.gif"></a>-->
+<br />
+策划：祁家蕊&#12288;设计：马倩&#12288;前端：小包&#12288;编辑：xxxx
+</div>
+</body>
+</html>
